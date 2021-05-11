@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 4, 2021, 11:43:00 PM
+    Author     : dell
+*/
+
+.tbDKMH {
+    -fx-background-color: blue;
+}
+
+.table-row-cell:empty {
+    -fx-background-color:white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width:0px;
+}
+
+.table-row-cell:odd:filled {
+    -fx-background-color:gray;
+}
+
+.table-row-cell:even:filled {
+    -fx-background-color:white;
+}

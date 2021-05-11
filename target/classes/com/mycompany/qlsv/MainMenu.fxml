@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="a" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlsv.MainMenuController">
+   <children>
+      <Label fx:id="lbUserName" alignment="CENTER_RIGHT" layoutX="242.0" layoutY="34.0" prefHeight="27.0" prefWidth="294.0" text="Label" />
+      <Button layoutX="192.0" layoutY="153.0" mnemonicParsing="false" onAction="#getThongTinSinhVienView" prefHeight="38.0" prefWidth="247.0" text="Xem thông tin cá nhân" />
+      <Button layoutX="192.0" layoutY="217.0" mnemonicParsing="false" onAction="#getXemDiemThiView" prefHeight="38.0" prefWidth="247.0" text="Xem điểm thi" />
+      <Button layoutX="192.0" layoutY="281.0" mnemonicParsing="false" onAction="#getDangKyMonHocView" prefHeight="38.0" prefWidth="247.0" text="Đăng ký môn học" />
+      <Button layoutX="544.0" layoutY="35.0" mnemonicParsing="false" text="Đăng xuất" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlsv.SinhVienController">
+   <children>
+      <TableView fx:id="tbSinhVien" layoutY="392.0" prefHeight="207.0" prefWidth="900.0" />
+      <Button layoutX="14.0" layoutY="73.0" mnemonicParsing="false" onAction="#getAddView" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #26dc23;" text="Thêm sinh viên">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font></Button>
+      <TextField fx:id="txt_Mssv" layoutX="3.0" layoutY="326.0" prefHeight="38.0" prefWidth="250.0" promptText="Nhập tên sinh viên cần tìm..." />
+      <Pane layoutY="59.0" prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Text layoutX="10.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý sinh viên" textOrigin="CENTER" wrappingWidth="362.6094055175781">
+         <font>
+            <Font name="Bauhaus 93" size="41.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cbLop" layoutX="3.0" layoutY="365.0" prefHeight="26.0" prefWidth="250.0" promptText="Lớp" />
+      <VBox layoutX="492.0" layoutY="68.0" prefHeight="323.0" prefWidth="410.0" style="-fx-background-color: white; -fx-border-color: black;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="410.0" style="-fx-background-color: orange;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin sinh viên" wrappingWidth="192.0926513671875">
+                     <font>
+                        <Font name="Century" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="409.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên" wrappingWidth="98.13671493530273">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtHoTen" prefHeight="26.0" prefWidth="314.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="41.0" prefHeight="27.0" prefWidth="409.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giới tính" textAlignment="JUSTIFY" wrappingWidth="98.13671493530273">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="cbNam" mnemonicParsing="false" onMouseClicked="#nam" prefHeight="27.0" prefWidth="78.0" text="Nam">
+                     <HBox.margin>
+                        <Insets right="80.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="cbNu" mnemonicParsing="false" onMouseClicked="#nu" prefHeight="27.0" prefWidth="86.0" text="Nữ">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="68.0" prefHeight="27.0" prefWidth="409.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh" wrappingWidth="98.13671493530273">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="ngaySinhFld" prefHeight="26.0" prefWidth="309.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="96.0" prefHeight="27.0" prefWidth="409.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi sinh" wrappingWidth="98.13671493530273">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtNoiSinh" prefHeight="26.0" prefWidth="314.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="123.0" prefHeight="27.0" prefWidth="409.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="98.13671493530273">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtEmail" prefHeight="26.0" prefWidth="314.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="150.0" prefHeight="27.0" prefWidth="409.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Khóa học" wrappingWidth="98.13671493530273">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtKhoaHoc" prefHeight="26.0" prefWidth="314.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="177.0" prefHeight="27.0" prefWidth="409.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lớp" wrappingWidth="98.13671493530273">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="cbbLop" prefHeight="26.0" prefWidth="310.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="204.0" prefHeight="27.0" prefWidth="409.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Khóa Mssv" wrappingWidth="98.13671493530273">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="cbKhoaMssv" mnemonicParsing="false" prefHeight="27.0" prefWidth="78.0">
+                     <HBox.margin>
+                        <Insets right="80.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="btnUpdate" disable="true" mnemonicParsing="false" onAction="#updateHandler" prefHeight="26.0" prefWidth="407.0" style="-fx-background-color: yellow;" text="Cập nhật">
+               <font>
+                  <Font name="Century" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

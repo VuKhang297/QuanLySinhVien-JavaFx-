@@ -1,0 +1,4 @@
+--patch-module
+com.mycompany.qlsv=_
+--add-reads
+com.mycompany.qlsv=ALL-UNNAMED

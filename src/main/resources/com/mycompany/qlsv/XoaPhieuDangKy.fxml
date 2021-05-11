@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="a" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlsv.XoaPhieuDangKyController">
+   <children>
+      <TableView fx:id="tbMonHoc" layoutX="72.0" layoutY="76.0" prefHeight="241.0" prefWidth="754.0" />
+      <Label layoutX="72.0" layoutY="363.0" prefHeight="18.0" prefWidth="143.0" text="Xác nhận mật khẩu cấp 2:" />
+      <Button fx:id="btnXoa" layoutX="373.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnXoa_Click" prefHeight="26.0" prefWidth="116.0" text="Hủy phiếu đăng ký" />
+      <Label fx:id="lbHocPhi" alignment="CENTER_RIGHT" layoutX="72.0" layoutY="318.0" prefHeight="34.0" prefWidth="754.0" />
+      <PasswordField fx:id="pfMatKhauCap2" layoutX="215.0" layoutY="359.0" />
+      <Button layoutX="72.0" layoutY="14.0" mnemonicParsing="false" onAction="#getMainMenuView" prefHeight="26.0" prefWidth="116.0" text="Quay lại" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="a" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlsv.ThongTinSinhVienController">
+   <children>
+      <Label fx:id="lbTen" layoutX="181.0" layoutY="84.0" prefHeight="42.0" prefWidth="382.0" text="Tên sinh viên:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbMssv" layoutX="181.0" layoutY="144.0" prefHeight="42.0" prefWidth="382.0" text="Mssv:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbGioiTinh" layoutX="181.0" layoutY="208.0" prefHeight="42.0" prefWidth="382.0" text="Giới tính">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbNgaySinh" layoutX="181.0" layoutY="268.0" prefHeight="42.0" prefWidth="382.0" text="Ngày sinh">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbNoiSinh" layoutX="181.0" layoutY="333.0" prefHeight="42.0" prefWidth="382.0" text="Nơi sinh">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbCmnd" layoutX="181.0" layoutY="393.0" prefHeight="42.0" prefWidth="382.0" text="CMND">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbEmail" layoutX="181.0" layoutY="453.0" prefHeight="42.0" prefWidth="382.0" text="Email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbNganh" layoutX="181.0" layoutY="513.0" prefHeight="42.0" prefWidth="382.0" text="Ngành">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbLop" layoutX="181.0" layoutY="571.0" prefHeight="42.0" prefWidth="382.0" text="Lớp">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#getMainMenuView" prefHeight="36.0" prefWidth="120.0" text="Quay lại" />
+   </children>
+</AnchorPane>
